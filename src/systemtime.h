@@ -20,19 +20,19 @@ typedef union{
 		  unsigned char b5 : 1;
 		  unsigned char b6 : 1;
 		  unsigned char b7 : 1;
-		}bit;
+		}g_u8bit;
 }LIGHT_TypeDef;
 
 extern static LIGHT_TypeDef 	s_sLightFlag;//…¡À∏±Í÷æ
 
-#define def_Light100ms			s_sLightFlag.bit.b0
-#define def_Light200ms			s_sLightFlag.bit.b1
-#define def_Light500ms			s_sLightFlag.bit.b2
-#define def_Light1s				s_sLightFlag.bit.b3
-#define def_Light2s				s_sLightFlag.bit.b4
-#define def_Light3s				s_sLightFlag.bit.b5
-#define def_Light5s				s_sLightFlag.bit.b6
-#define def_Light10s			s_sLightFlag.bit.b7
+#define def_Light100ms			s_sLightFlag.g_u8bit.b0
+#define def_Light200ms			s_sLightFlag.g_u8bit.b1
+#define def_Light500ms			s_sLightFlag.g_u8bit.b2
+#define def_Light1s				s_sLightFlag.g_u8bit.b3
+#define def_Light2s				s_sLightFlag.g_u8bit.b4
+#define def_Light3s				s_sLightFlag.g_u8bit.b5
+#define def_Light5s				s_sLightFlag.g_u8bit.b6
+#define def_Light10s			s_sLightFlag.g_u8bit.b7
 
 #define def_Light100msNum		16
 #define def_Light200msNum		2
